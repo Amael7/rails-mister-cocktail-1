@@ -1,0 +1,8 @@
+<h1>Create your dose </h1>
+<h2>Let's add a dose to your cocktail</h2>
+
+<%= simple_form_for ([@cocktail, @dose]) do |f| %>
+  <%= f.association :ingredient %>
+  <%= f.input :description %>
+  <%= f.submit %>
+<% end %>
