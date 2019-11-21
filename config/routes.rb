@@ -6,4 +6,6 @@ Rails.application.routes.draw do
   resources :doses, only: %i[destroy]
 
   delete '/cocktails/:id', to: 'cocktails#destroy', as: :cocktail_delete
+
+  resources :ingredients, only: %i[index]
 end

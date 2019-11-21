@@ -13,8 +13,8 @@
   <%end%>
 </ul>
 
-<%= link_to 'delete', cocktail_delete_path, :method => :delete, :confirm => "You sure?" %>
-
-
 <%= link_to 'Cocktail List', cocktails_path %>
+<br>
 <%= link_to 'Create a new dose', new_cocktail_dose_path(@cocktail) %>
+<br>
+<%= link_to 'delete', cocktail_delete_path, :method => :delete, data: { confirm: "Are you sure?" } %>

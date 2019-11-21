@@ -1,0 +1,7 @@
+<h1>List of all ingredients</h1>
+
+<ul>
+  <% @ingredients.each do |ingredient| %>
+  <li>id: <%= ingredient.id %> - <%= ingredient.name %></li>
+  <% end %>
+</ul>
