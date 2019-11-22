@@ -6,8 +6,8 @@
 </div>
 
 <div class="banner">
-  <img src="../assets/images/banner_img.jpg" alt="banner" id="banner-img">
-
+<!--   <img src="../assets/images/banner_img.jpg" alt="banner" id="banner-img">
+ -->
   <h2>Art of Cocktails</h2>
 </div>
 
@@ -16,9 +16,6 @@
     <% @cocktails.each do |cocktail| %>
       <div class="card-item">
         <li>
-          <img src="" alt="img_cocktail" class="img-cocktail-card">
-          <h3><%= cocktail.name %></h3>
-          <p><%= cocktail. %></p>
           <%= link_to cocktail.name, cocktail_path(cocktail) %>
         </li>
       </div>
