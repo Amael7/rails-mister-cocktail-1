@@ -2,3 +2,17 @@
 @import "alert";
 @import "avatar";
 @import "navbar";
+@import "container";
+@import "banner";
+@import "card_item";
+
+.container{
+  margin: 0 auto;
+  width: 90vw;
+  height: 100vh;
+  display: flex;
+}
+
+ul{
+  list-style: none;
+}
