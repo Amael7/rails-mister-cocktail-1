@@ -5,26 +5,22 @@
 </div>
 
 <div class="banner">
-<!--   <img src="../assets/images/banner_img.jpg" alt="banner" id="banner-img">
- -->
-  <h1>Art of Cocktails</h2>
+  <h1>Art of Cocktails</h1>
+  <p>The best cocktail for you and only you.</p>
+  <%= link_to 'Create a new cocktail', new_cocktail_path, class: "btn-gradient" %>
 </div>
 
-<div class="container">
+<div class="test">
   <ul>
     <% @cocktails.each do |cocktail| %>
-      <div class="card-item">
-        <li>
-          <div class="img-card">
-            <img src="../../assets/images/card/Mojitos.jpg" alt="">
+      <li>
+        <div class="card-product">
+          <div class="card-product-infos">
+            <h2><%= link_to cocktail.name, cocktail_path(cocktail), class: "btn-gradient" %></h2>
           </div>
-          <%= link_to cocktail.name, cocktail_path(cocktail) %>
-        </li>
-      </div>
+        </div>
+      </li>
     <% end %>
   </ul>
+
 </div>
-
-
-
-<%= link_to 'Create a new cocktail', new_cocktail_path %>

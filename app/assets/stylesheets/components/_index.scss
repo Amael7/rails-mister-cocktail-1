@@ -1,18 +1,21 @@
 // Import your components CSS files here.
 @import "alert";
 @import "avatar";
+@import "button";
 @import "navbar";
 @import "container";
 @import "banner";
 @import "card_item";
 
-.container{
-  margin: 0 auto;
-  width: 90vw;
-  height: 100vh;
+ul{
+  list-style: none;
+  width: 100%;
+  height: 100%;
   display: flex;
 }
 
-ul{
-  list-style: none;
+li{
+  height: 400px;
+  width: 500px;
 }
+

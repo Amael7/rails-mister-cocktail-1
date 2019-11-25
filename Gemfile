@@ -40,6 +40,7 @@ gem 'font-awesome-sass', '~> 5.6.1'
 gem 'simple_form'
 
 gem 'carrierwave', '~> 1.2'
+gem 'cloudinary', '~> 1.9.1'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
